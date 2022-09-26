@@ -1,5 +1,5 @@
-import Estudante from "./components/Estudante";
+import Votar from "./components/Votar";
 
 export default function App() {
-	return <Estudante nome={"Pocoyo"} curso={"Design Digital"} universidade={"UFC"} />;
+	return <Votar />;
 }
