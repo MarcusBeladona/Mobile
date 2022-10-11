@@ -1,5 +1,5 @@
-import Estudante from "./components/Estudante";
+import Questao1 from "./components/Q1/Questao1";
 
 export default function App() {
-	return <Estudante nome={"Pocoyo"} curso={"Design Digital"} universidade={"UFC"} />;
+	return <Questao1 />;
 }
