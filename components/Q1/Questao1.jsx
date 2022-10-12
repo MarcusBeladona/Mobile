@@ -1,13 +1,25 @@
-import Questao1_A from "./Questao1_A";
-import Questao1_B from "./Questao1_B";
+import { StyleSheet, View } from "react-native";
 
-import { View } from "react-native";
-
-export default () => {
+export default props => {
 	return (
-		<View>
-			<Questao1_A />
-			<Questao1_B />
+		<View style={styles.container}>
+			<View style={styles.card}>{props.children}</View>
 		</View>
 	);
 };
+
+const styles = StyleSheet.create({
+	container: {
+		alignItems: "center",
+		justifyContent: "center",
+		flex: 1,
+	},
+	card: {
+		borderRadius: 12,
+		width: "fit-content",
+		height: "fit-content",
+		backgroundColor: "#eee",
+		alignItems: "center",
+		justifyContent: "center",
+	},
+});
